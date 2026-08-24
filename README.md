@@ -139,7 +139,7 @@ SELECT *
 - O CPB/ROE das obras *THE BIG FOUR* e *KARATE KID, THE*, após pesquisa no portal da ANCINE, foram identificados e preenchidos (*E1600633500000* e *E1600548700000*, respectivamente).
 - Não foi possível identificar o CPB/ROE das outras obras, sendo decidido preencher o CPB/ROE seguindo o padrão `N/C <sequencial>` para preservar o histórico sem comprometer a unicidade desse atributo.
 ### 5. Exportação da Base de Dados:
-Modificação e remoção de registros da base de dados definida (versão final para exportação):
+Modificação e remoção de registros da base de dados definida (versão final da base de dados para exportação):
 ```
 -- Alterar data e país
 UPDATE bd_ancine SET DATA_LANCAMENTO_OBRA = '14/05/2026' WHERE (CPB_ROE, TITULO_ORIGINAL) = ('E2500270900000', 'IN THE GREY');
@@ -178,6 +178,8 @@ SELECT *
 ## 📊 Análise e Interpretação dos Dashboards
 
 A estrutura analítica no Power BI foi desenvolvida de forma modular, permitindo a exploração dos dados desde um panorama consolidado até análises específicas por segmentação.
+
+* Relatório na web disponível no [link](https://app.powerbi.com/view?r=eyJrIjoiOTQ0ZGRkZTAtOTExMS00YWFlLThjNGYtN2E1YTJmNTRhNzA1IiwidCI6ImMzN2IzN2EzLWU5ZTItNDJmOS1iYzY3LTRiOWI3MzhlMWRmMCJ9).
 
 ### Estrutura e Navegação do Relatório
 
